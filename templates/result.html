@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результат предсказания</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .result {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+        }
+        .temperature {
+            font-size: 20px;
+        }
+        .profit {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .button {
+            background-color: #ff6347;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍨 Результат предсказания</h1>
+
+        <div class="result">
+            <div class="temperature">🌡️ При температуре <strong>{{ temperature }}°F</strong></div>
+            <div class="profit">${{ profit }}</div>
+            <div>ожидаемая прибыль от продажи мороженого</div>
+        </div>
+
+        <a href="/" class="button">📊 Новое предсказание</a>
+    </div>
+</body>
+</html>
